@@ -96,3 +96,57 @@ body{
 #root div button:hover{
   background-color: hsl(158, 37%, 27%);
 }
+
+@media (max-width: 375px){
+  body{
+    width: 375px;
+  }
+
+  #root div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 0;
+    width: 90%;
+    position: relative;
+  }
+
+  .product{
+    content: url("images/image-product-mobile.jpg");
+    border-radius: 10px 10px 0 0;
+  }
+
+  #root div h1{
+    font-size: 15px;
+    margin: 5%;
+  }
+
+  #root div h2{
+    font-size: 30px;
+    margin: 0 5% 5% 5%;
+    line-height: 30px;
+  }
+
+  #root div p{
+    font-size: 15px;
+    margin: 0 5% 5% 5%;
+  }
+
+  #root div h3{
+    margin: 0 5% 5% 5%;
+    font-size: 30px;
+  }
+
+  #root div h4{
+    position: absolute;
+    left: 50%;
+    top: 76%;
+    font-weight: 400;
+  }
+
+  #root div button{
+    margin: 0 5% 5% 5%;
+    border-radius: 10px;
+    height: 50px;
+  }
+}
